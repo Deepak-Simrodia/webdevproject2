@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: montserrat;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 5px rgba(36, 36, 36, 0.541);
+}
+nav #navicon{
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+nav #smallIcon{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav >h1{
+    width: 10%;
+    font-size: 18px;
+}
+.ri-bubble-chart-fill{
+    color: yellow;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+#navlinks{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+}
+#navlinks a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+}
+#navlinks a:hover{
+    box-shadow: 2px 4px 15px gray;
+    border-radius: 5px;
+}
+.ri-search-line{
+    margin-left: 50px;
+    margin-right: 15px;
+}
+nav button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.how:hover{
+    box-shadow: 3px 5px 15px gray;
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: pointer;
+}
+#profile{
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+#profileText{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 2%;
+}
+#profileText h1{
+    text-shadow: 3px 5px 8px gray;
+}
+#profileText h2 {
+    color: rgb(255, 255, 2);
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#profileText p{
+    margin-bottom: 2%;
+}
+#profileText button{
+    padding: 5px 25px;
+    margin-bottom: 4%;
+    box-shadow: 4px 10px 10px gray;
+}
+#blackbut{
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    transition: .2s;
+}
+#blackbut:hover{
+    transform: translateX(10px);
+}
+#yellowbut{
+    background-color : rgb(255, 255, 2);
+    font-weight: 500;
+    border: none;
+    transition: .2s;
+}
+#yellowbut:hover{
+    transform: translateX(10px);
+}
+#profilePic{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.pic{
+    width: 80%;
+    height: 90%;
+    background-color: rgba(255, 247, 0, 0.856);
+    background-image: url(image/stefan-stefancik-QXevDflbl8A-unsplash-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: 1s;
+    overflow: hidden;
+}
+.pic:hover{
+    background-color: #000;
+}
+
+#skillbox{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.skill{
+    width: 23%;
+    height: 70%;
+    box-shadow: 2px 5px 10px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: .5s;
+    cursor: pointer;
+}
+.skill:hover{
+    transform: scale(1.1);
+}
+.skill h3{
+    font-size: 17px;
+}
+.skill h3 p{
+    margin-top: 5px;
+    font-size: 11px;
+}
+.i1{
+    font-size: 25px;
+    color: rgb(27, 26, 26);
+    display: inline-block;
+}
+.ri-arrow-right-s-line{
+    font-size: 20px;
+    display: inline-block;
+}
+.i2{
+    font-size: 25px;
+    color: yellow;
+    display: inline-block;
+}
+.i3{
+    font-size: 25px;
+    color: gray;
+    display: inline-block;
+}
+#webpage2{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+}
+#page21{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1557611382-a6ec38905c47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+#page21 span{
+    transform: rotate(270deg);
+    position: absolute;
+    font-weight: 600;
+    top: 10%;
+    right: -10%;
+}
+#page22{
+    width: 50%;
+    height: 100%;
+    padding: 5% 7%;
+}
+#page22 p{
+    margin-bottom: 15px;
+}
+#page22 .insta{
+    font-size: 20px;
+    color: rgb(255, 0, 174);
+    margin-right: 15px;
+    display: inline-block;
+}
+.insta:hover{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: .5s;
+}
+#page22 .dribble{
+    font-size: 20px;
+    color: rgb(88, 53, 105);
+    margin-right: 15px;
+    display: inline-block;
+}
+.dribble:hover{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: .5s;
+}
+#page22 .linkedin{
+    font-size: 20px;
+    color: rgb(8, 0, 255);
+    margin-right: 15px;
+    display: inline-block;
+}
+.linkedin:hover{
+    background-color: #000;
+    cursor: pointer;
+    transition: .5s;
+}
+#webpage3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.pg1{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#percent{
+    width: 100%;
+    height: 40%;
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.skillpercent{
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skillpercent span{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+#statics{
+    width: 100%;
+    height: 30%;
+    background-color: #fff;
+    border: 1px solid black;
+}
+#Adobepercent{
+    width: 85%;
+    height: 100%;
+    background-color: rgb(234, 255, 0);
+}
+#Htmlpercent{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(234, 255, 0);
+}
+#Java{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(234, 255, 0);
+}
+.page3{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#webpage3{
+    padding: 5%;
+}
+.boxskill{
+    width: 45%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 10px gray;
+}
+.boxskill img{
+    margin-bottom: 20px;
+    width: 50%;
+    height: 50%;
+}
+.boxskill img:hover{
+    transform: scale(1.3);
+}
+.box2{
+    margin-top: 20px;
+}
+.box4{
+    margin-top: 30px;
+}
+#webpage4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#inerpage4{
+    width: 80%;
+    height: 70%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    color: #fff;
+}
+#follow{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.followbox{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.followicon{
+    font-size: 50px;
+    color: yellow;
+}
+.followbox:hover{
+    box-shadow: 2px 5px 20px white;
+}
+#inerpage4 button{
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: 800;
+    background-color: rgb(204, 204, 42);
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+}
+#inerpage4 button:hover{
+    background-color: #fff;
+    color: #000;
+}
